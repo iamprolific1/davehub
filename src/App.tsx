@@ -226,7 +226,7 @@ function App() {
           {/* testimonials grid */}
           <section id="testimonials" className="mt-14">
             <motion.div initial="hidden" whileInView="show" viewport={{ once: true }} variants={container} className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {TESTIMONIALS.map((t, i) => (
+              {TESTIMONIALS.map((t) => (
                 <motion.blockquote key={t.id} variants={appear} className="bg-white rounded-2xl p-6 shadow hover:shadow-lg transition">
                   <p className="text-slate-700">“{t.excerpt}”</p>
                   <footer className="mt-4 flex items-center justify-between">
